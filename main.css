@@ -1,0 +1,39 @@
+.calculator {
+
+    padding: 10px;
+     height: 700px;
+     width: 400px;
+     margin: auto;
+     background-color: "green"
+
+}
+
+.display-box {
+
+    font-family: 'sans-serif';
+    background-color: "green";
+    width: 65%;
+    height: 100%;
+
+
+}
+
+#btn {
+    background-color: lightgreen;
+}
+input[type=button] {
+
+    font-family: sans-serif;
+    background-color: "green";
+    color: "white";
+    width: 100%;
+    height: 100%;
+    outline: auto;
+
+} 
+
+input:active[type=button] {
+
+
+
+}
