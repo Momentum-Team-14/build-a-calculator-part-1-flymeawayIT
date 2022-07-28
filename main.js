@@ -1,24 +1,40 @@
-// This function clear all the values
-function clearScreen() {
+// This function clears all the values
+function clear() {
 
-    document.getElementById("result") .value= "";
-
-}
-
-// This function display values
-
-function display(value) {
-    document.getElementById("result") .value += value;
-
-}
-
-// This function evaluates the expression and returns result
-
-function calculate() {
-
-    let p = document.getElementById("result") .value;
-    let q = eval(p);
-
-    document.getElementById("result") .value  = q;
-
-}
+    document.getElementByClass("clear").value= "";
+ 
+ }
+ 
+ // This function display values
+ 
+ function display(equal) {
+     document.getElementByClass("result").value += value;
+ 
+ }
+ 
+ // This function evaluates the expression and returns result
+ 
+ function calculate() {
+ 
+     let p = document.getElementByClass("button")          .value;
+     let q = eval(p);
+ 
+     document.getElementByClass("button") .value              = q;
+ 
+ }
+ 
+ const calculator = {
+   displayValue: '0',
+   firstOperand: null,
+   waitingForSecondOperand: false,
+   operator: null,
+ }
+ 
+ function updateDisplay() {
+   // select the element with class of `calculator-screen`
+   const display = document.querySelector('.calculator-screen');
+   // update the value of the element with the contents of `displayValue`
+   display.value = calculator.displayValue;
+ }
+ 
+ 
