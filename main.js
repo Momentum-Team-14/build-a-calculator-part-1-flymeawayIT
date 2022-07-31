@@ -1,3 +1,4 @@
+
 const calculator = {
     displayValue: '0',
     firstOperand: null,
@@ -6,11 +7,11 @@ const calculator = {
   }
   
   
-  document.getElementByClass('button') { button.addEventListener('click', displayNumber)('calculator-screen')
+  document.getElementsByClass('button') { button.addEventListener('click', displayNumber)('calculator-screen')
     
   })
   
-  document.getElementByClass('operator')
+  document.getElementsByClass('operator')
   button.addEventListener('click', function {
                           
                           
@@ -18,14 +19,14 @@ const calculator = {
   // This function clears all the values
   function clear() {
   
-     document.getElementByClass("clear").value= "";
+     document.getElementsByClass("clear").value= "";
   
   }
   
   // This function display values
   
   function display(equal) {
-      document.getElementByClass("number").value += value;
+      document.getElementsByClass("number").value += value;
   
   }
   
@@ -41,11 +42,12 @@ const calculator = {
   }
   
   
-  function updateDisplay("calculator-screen") {
+  function updateDisplay("result-screen") {
     // select the element with class of `calculator-screen`
     const display = document.querySelector('number');
     // update the value of the element with the contents of `displayValue`
     display.value = calculator.displayValue;
   }
   
-  
+  const clickSoundMain = document.getElementById('#click-button')
+  const clickSoundMain = document.getElementById('#click-operator')
