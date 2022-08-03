@@ -7,46 +7,62 @@
  // }
   
 //const calculator = document.querySelector('.calculator');
-const numberKeys = document.querySelector('.buttons');
-const operatorKeys = document.querySelector('.operator');
-const display = document.querySelector('.result-screen');
-const clear = document.querySelector('.clear');
-const equal = document.querySelector"('.equal');
-const result = document.getElementById("result-screen");
+//console.log("connected");
 
-for (let button of buttons) { 
-    button.addEventListener('click', display("result-screen")) 
 
+let numberKeys = document.querySelectorAll('.buttons');
+const operatorKeys = document.querySelectorAll('.operators');
+const display = document.querySelectorAll('.result-screen');
+const clearScreen = document.querySelector('.clear');
+const equal = document.querySelector('.equal');
+//const result = document.getElementById(".result-screen");
+
+//for (let button of buttons) { 
+    //button.addEventListener('click', display("result")) 
+
+//}
+
+for (let operator of operatorKeys) {
+    operator.addEventListener('click', function (event) {
+        display.innerText = event.target.innerText
+})
 }
 
-for (let operator of operators) {
-    operator.addEventListener('click', display."results-screen") 
+clearScreen.addEventListener("click", function (event) {
+    display.innerText = " "})
+
+
+
+for (let numberKey of numberKeys) {
+    numberKey.addEventListener("click", function (event){
+        display.innerText = event.target.textContent
+})
 }
 
-clear.addEventListener("click", clearResult)
+equal.addEventListener("click", function (event) {
+    display.innerText = event.target.innerText
+})
 
-numberKeys.addEventListener("buttons"inputResult)
-
-equal.addEvenbtListener("equal"inputResult)
-
-function calculate (firstNumber, operator, secondNumber) {
+function calcNumbers(firstNumber, operator, secondNumber) {
   firstNumber = parseInt(firstNumber)
   secondNumber = parseInt(secondNumber)
   
   if (operator === '+') return firstNumber + secondNumber
   if (operator === '-') return firstNumber - secondNumber
   if (operator === '*') return firstNumber * secondNumber
-  if (operator === '/') return firstNumber /  secondNumber
-  
+  if (operator === '/') return firstNumber / secondNumber
+
+  console.log(calcNumbers.display);
 }
  
 
-function updateDisplay("result-screen") {
-  // select the element with class of `result-screen`
-  const display = document.querySelector('button');
-  // update the value of the element with the contents of `displayValue`
-  display.value = calculator.displayValue;
-}
+
+//function updateDisplay("result") {
+      // select the element with class of `result-screen`
+  //const display = document.querySelector('button');
+       // update the value of the element with the contents of `displayValue`
+  //display.value = calculator.displayValue;
+//}
 
 
 
@@ -92,7 +108,7 @@ function updateDisplay("result-screen") {
 //}
 
 //calculator.dataset.previousKeyType = type
-}
+//}
 
 
 //const clickSoundMain = document.getElementById('#click-button')
