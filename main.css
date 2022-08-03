@@ -29,7 +29,7 @@
   .result-screen:hover {
     background-color: white;
   }
-  .button {
+  .buttons {
     
     height: 90px;
     
@@ -47,13 +47,17 @@
     border-right: 0;
     width: 110%;
   }
-  
-  .button:hover {
+
+  .button2:hover {
+    background-color: #4e9ed4;
+
+  }
+  .buttons:hover {
     background-color: red;
     
   }
   
-  .operator {
+  .operators {
     font-size: 40px;
     grid-template-column: (-1);
     background-color: #337cac;
@@ -62,7 +66,7 @@
     
   }
   
-  .operator:hover {
+  .operators:hover {
     background-color:#4e9ed4
     
   }
@@ -92,7 +96,7 @@
     
   }
   
-  #equal:hover, #button2:hover {
+  .equal:hover {
     background-color: #4e9ed4;
   }
   
