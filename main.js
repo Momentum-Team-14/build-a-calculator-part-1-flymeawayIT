@@ -1,60 +1,122 @@
+let screen = document.getElementById("display")
+screen.innerHTML = "";
 
-//const result-screen = {
-   // displayValue: '0',
-  //  firstOperand: null,
-  //  waitingForSecondOperand: false,
-   // operator: null,
- // }
-  
-//const calculator = document.querySelector('.calculator');
-//console.log("connected");
-
-
-let numberKeys = document.querySelectorAll('.buttons');
-const operatorKeys = document.querySelectorAll('.operators');
-const display = document.querySelectorAll('.result-screen');
-const clearScreen = document.querySelector('.clear');
-const equal = document.querySelector('.equal');
-//const result = document.getElementById(".result-screen");
-
-//for (let button of buttons) { 
-    //button.addEventListener('click', display("result")) 
-
-//}
-
-for (let operator of operatorKeys) {
-    operator.addEventListener('click', function (event) {
-        display.innerText = event.target.innerText
+seven.addEventListener("click", function (event) {
+    screen.innerHTML += "7";
 })
-}
 
-clearScreen.addEventListener("click", function (event) {
-    display.innerText = " "})
-
-
-
-for (let numberKey of numberKeys) {
-    numberKey.addEventListener("click", function (event){
-        display.innerText = event.target.textContent
+eight.addEventListener("click", function (event) {
+    screen.innerHTML += "8";
 })
-}
+
+nine.addEventListener("click", function (event) {
+    screen.innerHTML += "9";
+})
+
+four.addEventListener("click", function (event) {
+    screen.innerHTML += "4";
+})
+
+five.addEventListener("click", function (event) {
+    screen.innerHTML += "5";
+})
+
+six.addEventListener("click", function (event) {
+    screen.innerHTML += "6";
+})
+
+one.addEventListener("click", function (event) {
+    screen.innerHTML += "1";
+})
+
+two.addEventListener("click", function (event) {
+    screen.innerHTML += "2";
+})
+
+three.addEventListener("click", function (event) {
+    screen.innerHTML += "3";
+})
+
+zero.addEventListener("click", function (event) {
+    screen.innerHTML += "0";
+})
+
+decimal.addEventListener("click", function (event) {
+    screen.innerHTML += ".";
+})
+
+plus.addEventListener("click", function (event) {
+    screen.innerHTML += "+";
+})
+
+minus.addEventListener("click", function (event) {
+    screen.innerHTML += "-";
+})
+
+multiply.addEventListener("click", function (event) {
+    screen.innerHTML += "*";
+})
+
+divide.addEventListener("click", function (event) {
+    screen.innerHTML += "/";
+})
+
+clear.addEventListener("click", function (event) {
+    screen.innerHTML = "";
+})
 
 equal.addEventListener("click", function (event) {
-    display.innerText = event.target.innerText
+    screen.innerHTML = eval(screen.innerHTML);
 })
 
-function calcNumbers(firstNumber, operator, secondNumber) {
-  firstNumber = parseInt(firstNumber)
-  secondNumber = parseInt(secondNumber)
-  
-  if (operator === '+') return firstNumber + secondNumber
-  if (operator === '-') return firstNumber - secondNumber
-  if (operator === '*') return firstNumber * secondNumber
-  if (operator === '/') return firstNumber / secondNumber
-
-  console.log(calcNumbers.display);
-}
+// const numberKeys = document.querySelectorAll('.buttons');
+// const operatorKeys = document.querySelectorAll('.operators');
+// let display = document.getElementById('result-screen');
  
+ 
+
+// const clearScreen = document.querySelector('.clear');
+// const equal = document.querySelector('.equal');
+
+
+// for (let operator of operatorKeys) {
+//     operator.addEventListener("click", function (event) {
+//         display.innerText = event.target.innerHTML
+// })
+// }
+
+// clearScreen.addEventListener("click", function (event) {
+//     display.innerText = ""})
+
+
+
+// for (let numberKey in numberKeys) {
+//     numberKey.addEventListener("click", function (event){
+//        console.log("click"); 
+//         display.innerHTML  = event.target.innerHTML;
+// })
+// }
+
+// equal.addEventListener("click", function (event) {
+//     display.innerText = event.target.innerHTML
+// })
+
+// function calcNumbers(firstNumber, operator, secondNumber) {
+//   firstNumber = parseInt(firstNumber)
+//   secondNumber = parseInt(secondNumber)
+  
+//   if (operatorKeys === '+') return firstNumber + secondNumber
+//   if (operatorKeys === '-') return firstNumber - secondNumber
+//   if (operatorKeys === '*') return firstNumber * secondNumber
+//   if (operatorKeys === '/') return firstNumber / secondNumber
+
+//   console.log(calcNumbers);
+// }
+ 
+
+
+
+
 
 
 //function updateDisplay("result") {
