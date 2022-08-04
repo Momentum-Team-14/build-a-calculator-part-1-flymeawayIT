@@ -69,6 +69,10 @@ equal.addEventListener("click", function (event) {
     screen.innerHTML = eval(screen.innerHTML);
 })
 
+
+
+
+
 // const numberKeys = document.querySelectorAll('.buttons');
 // const operatorKeys = document.querySelectorAll('.operators');
 // let display = document.getElementById('result-screen');
@@ -114,11 +118,6 @@ equal.addEventListener("click", function (event) {
 // }
  
 
-
-
-
-
-
 //function updateDisplay("result") {
       // select the element with class of `result-screen`
   //const display = document.querySelector('button');
@@ -126,19 +125,11 @@ equal.addEventListener("click", function (event) {
   //display.value = calculator.displayValue;
 //}
 
-
-
-
-
-
-
-
 //const key = event.target
 //const keyValue = key.textContent
 //const displayValue =display.textContent
 //const { type } = key.dataset
 //const { previousKeyType } = calculator.dataset
-
 
 
 //if (type === 'number') {
@@ -172,6 +163,3 @@ equal.addEventListener("click", function (event) {
 //calculator.dataset.previousKeyType = type
 //}
 
-
-//const clickSoundMain = document.getElementById('#click-button')
-//const clickSoundMain = document.getElementById('#click-operator')
